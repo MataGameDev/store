@@ -1,5 +1,5 @@
 import React from 'react';
-import {StyleSheet, View, Text,ScrollView, Button,Image} from 'react-native';
+import {StyleSheet, View, Text, Button,Image} from 'react-native';
 import {useNavigation} from '@react-navigation/native';
 
 function Box({ id, description,title,image,stock}) {
@@ -20,6 +20,7 @@ function Box({ id, description,title,image,stock}) {
                 title="Ver"
                 onPress={
                     () => navigation.navigate('Details', {
+                        screen: 'DetailSCreen',
                         id: id,
                         title: title,
                         description: description,

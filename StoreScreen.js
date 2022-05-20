@@ -1,11 +1,10 @@
 import React from 'react';
 import {StyleSheet,ScrollView, View} from 'react-native';
 import Box from './Box';
-import NavigationBottom from './NavigationBottom';
 import tasks from './Data/tasks';
 
 
-function MenuScreen() {
+function StoreScreen() {
     return (
         
             <View style={styles.root}>
@@ -27,10 +26,6 @@ function MenuScreen() {
                 }
             </View>
                 </ScrollView>
-
-
-            <NavigationBottom />
-
         </View>
     );
 }
@@ -39,7 +34,7 @@ const styles = StyleSheet.create({
     root: {
         flex: 1,
         flexDirection: 'column',
-        backgroundColor: '#ccff90',
+        backgroundColor: '#808080',
     },
 
     containerBox: {
@@ -53,4 +48,4 @@ const styles = StyleSheet.create({
     
 })
 
-export default MenuScreen;
+export default StoreScreen;
